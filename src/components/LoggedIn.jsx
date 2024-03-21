@@ -30,16 +30,15 @@ export default function LoggedIn() {
     <div>
       <Container>
             <Row>
-                <div className="p-5">
-                    <div className="d-flex justify-content-center align-items-center vh-100">
-                        <Card className='rounded rounded-5 col-lg-10 py-5 card-login d-flex justify-content-center align-items-center bgBlur'>
-                                <div className='col-12 text-center p-5'>
-                                    <h1 className="display-6 text-white fw-bold">
+                <div className="">
+                    <div className="">
+                                <div className='col-12 text-center '>
+                                    <h1 className="display-6 ">
                                         Kelazz, dh skrg lo cabut
                                     </h1>
+                                    <hr />
                                     <Button onClick={handleLogout} variant='danger' className='col-12 p-2 mt-4'><span className="lead">Iyak cabut gw cabut</span></Button>
                                 </div>
-                        </Card>
                     </div>
                 </div>
             </Row>

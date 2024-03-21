@@ -7,6 +7,15 @@
     background-position: center;
 }
 
+.bodyBg2
+{
+    background-image: url('../img/abrar.jpg');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+}
+
 .bgBlur
 {
     backdrop-filter: blur(5px);

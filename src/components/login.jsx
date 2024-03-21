@@ -10,7 +10,7 @@ export default function Login() {
         auth.signInWithPopup(googleProvider)
           .then((result) => {
             sessionStorage.setItem("userEmail", result.user.email);
-            
+
             Swal.fire({
                 icon: "success",
                 title: `Welcome ${result.user.displayName}`,
@@ -30,16 +30,19 @@ export default function Login() {
     <>
         <Container>
             <Row>
-                <div className="p-5">
-                    <div className="d-flex justify-content-center align-items-center vh-100">
-                        <Card className='rounded rounded-5 col-lg-10 py-5 card-login d-flex justify-content-center align-items-center bgBlur'>
+                <div className="">
+                    <div className="d-flex justify-content-center align-items-center">
                                 <div className='col-12 text-center p-5'>
-                                    <h1 className="display-6 text-white fw-bold">
+                                    <h1 className="display-6  ">
                                         Login dulu bos
                                     </h1>
+                                    <br />
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam fugit reprehenderit aspernatur voluptas assumenda esse doloribus autem, perspiciatis unde dicta!
+                                    </p>
+                                    <hr />
                                     <Button onClick={signInWithGoogle} variant='primary' className='col-12 p-2 mt-4'><span className="lead">Login with Google</span> <I.Google className='lead mb-2 ms-1' /></Button>
                                 </div>
-                        </Card>
                     </div>
                 </div>
             </Row>
