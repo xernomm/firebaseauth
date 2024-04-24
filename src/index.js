@@ -12,6 +12,7 @@ import {
 import reportWebVitals from './reportWebVitals';
 import LoginPage from './pages/LoginPage';
 import NotFound from './pages/404';
+import Footer from './components/Footer';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Footer />
   </React.StrictMode>
 );
 
